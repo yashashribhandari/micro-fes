@@ -18,6 +18,25 @@ This project demonstrates how micro frontends can be used by independent teams t
 - **Performance Optimization**: Load only the necessary code, potentially improving load times.
 - **Flexibility**: Easily integrate new features or replace existing ones without a complete rebuild.
 
+## Docker Setup
+
+1. **Build and Run Containers**: Use `docker-compose` to build and run all services.
+
+```sh
+docker-compose up --build
+```
+2. **Access the Applications:**
+
+- **Host**: [http://localhost:8080](http://localhost:8080)
+- **Onboarding**: [http://localhost:4000](http://localhost:4000)
+- **Dashboard**: [http://localhost:3000](http://localhost:3000)
+- **Server**: [http://localhost:3030](http://localhost:3030)
+3. **Stop the Containers**: To stop the running containers, use:
+
+```sh
+docker-compose down
+```
+
 ## Architecture Components
 
 ### Diagram
