@@ -31,7 +31,7 @@ This project demonstrates how micro frontends can be used by independent teams t
 
 ### Onboarding
 
-- **Role**: Manages user authentication and authorization.
+- **Role**: Manages users and authentication/authorization.
 - **Module Federation Configuration**: Acts as a remote that the Host can consume.
 
 ### Dashboard
@@ -43,7 +43,6 @@ This project demonstrates how micro frontends can be used by independent teams t
 
 - **Role**: Provides APIs and handles JWT-based authentication.
 - **Note**: While not a frontend, it supports the authentication mechanisms used by the micro frontends. Currently, it serves dummy data, but it can be extended to integrate with the server for more comprehensive functionality.
-
 
 ## Tech Stack
 
@@ -84,7 +83,6 @@ Currently, unit tests are added in the onboarding directory for the login module
 
 - **Unit Testing**: Test individual components and utilities within each micro frontend.
   - **Tools**: Jest, React Testing Library.
-- **Integration Testing**: Test interactions between micro frontends and the Host.
 - **End-to-End (E2E) Testing**: Simulate real user interactions across the entire application.
   - **Tools**: Cypress, Playwright.
 
@@ -93,6 +91,17 @@ Currently, unit tests are added in the onboarding directory for the login module
 - **Jest**: JavaScript testing framework.
 - **React Testing Library**: For testing React components.
 - **Cypress**: For E2E testing.
+
+## Contributing
+
+To contribute to this project, follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Make your changes.
+4. Commit your changes (`git commit -m 'Add some feature'`).
+5. Push to the branch (`git push origin feature-branch`).
+6. Open a pull request.
 
 ### Improvements
 
@@ -105,13 +114,4 @@ Currently, unit tests are added in the onboarding directory for the login module
 
 - Set coverage thresholds.
 
-## Contributing
-
-To contribute to this project, follow these steps:
-
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature-branch`).
-3. Make your changes.
-4. Commit your changes (`git commit -m 'Add some feature'`).
-5. Push to the branch (`git push origin feature-branch`).
-6. Open a pull request.
+**Integration Testing**: Test interactions between micro frontends and the Host.
