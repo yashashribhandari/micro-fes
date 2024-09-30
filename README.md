@@ -1,4 +1,4 @@
-## Overview of Module Federation in Webpack
+### Overview of Module Federation in Webpack
 
 This project demonstrates how micro frontends can be used by independent teams to perform their own tasks. This is achieved using module federation of Webpack 5.
 
@@ -25,12 +25,14 @@ This project demonstrates how micro frontends can be used by independent teams t
 ```sh
 docker-compose up --build
 ```
+
 2. **Access the Applications:**
 
 - **Host**: [http://localhost:8080](http://localhost:8080)
 - **Onboarding**: [http://localhost:4000](http://localhost:4000)
 - **Dashboard**: [http://localhost:3000](http://localhost:3000)
 - **Server**: [http://localhost:3030](http://localhost:3030)
+
 3. **Stop the Containers**: To stop the running containers, use:
 
 ```sh
