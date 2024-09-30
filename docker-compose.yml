@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  host:
+    build:
+      context: ./host
+    ports:
+      - "8080:8080"
+    depends_on:
+      - onboarding
+      - dashboard
+
+  onboarding:
+    build:
+      context: ./onboarding
+    ports:
+      - "4000:4000"
+
+  dashboard:
+    build:
+      context: ./dashboard
+    ports:
+      - "3000:3000"
+
+  server:
+    build:
+      context: ./server
+    ports:
+      - "3030:3030"

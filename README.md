@@ -37,12 +37,16 @@ This project demonstrates how micro frontends can be used by independent teams t
 ### Dashboard
 
 - **Role**: Displays data metrics and KPIs.
-- **Module Federation Configuration**: Acts as another remote for the Host.
+- **Module Federation Configuration**: Acts as another remote for the Host. Currently, it serves dummy data, but it can be extended to integrate with the server for more comprehensive functionality.
 
 ### Server
 
 - **Role**: Provides APIs and handles JWT-based authentication.
-- **Note**: While not a frontend, it supports the authentication mechanisms used by the micro frontends. Currently, it serves dummy data, but it can be extended to integrate with the server for more comprehensive functionality.
+- **Note**: While not a frontend, it supports the authentication mechanisms used by the micro frontends.
+
+## Sequence diagram
+
+![Sequence Diagram](assets/sd.png)
 
 ## Tech Stack
 
